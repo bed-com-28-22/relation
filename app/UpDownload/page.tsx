@@ -1,18 +1,19 @@
-// pages/index.js
+
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="relative h-screen w-screen">
-      <Head>
-        <title>File Management</title>
-      </Head>
-      <div 
-        className="min-h-screen bg-cover bg-center" 
-        style={{ backgroundImage: "url('/background.jpg')" }}
-      >
-        <div className="absolute top-4 left-4">
+     
+      
+      
+      <div className="absolute inset-0 flex flex-col  justify-bewteen text-center text-white bg-black bg-opacity-50">
+        <h1 className="text-4xl text-orange-500 md:text-6xl font-bold mb-4">
+          University of Malawi online lecturing
+        </h1>
+        <p className="text-2xl md:text-4xl text-blue-700 mb-8"></p>
+        <div className='justify-between content-center text-green-700 '>
           
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-5 bg-black bg-opacity-50">
@@ -32,5 +33,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    
   );
 }

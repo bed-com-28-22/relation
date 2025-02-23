@@ -17,25 +17,16 @@ export default function Home() {
         <title>University of Malawi Online Lecturing</title>
       </Head>
       
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
+      <div className="absolute inset-0 flex flex-col  justify-bewteen text-center text-white bg-black bg-opacity-50">
         <h1 className="text-4xl text-orange-500 md:text-6xl font-bold mb-4">
           University of Malawi online lecturing
         </h1>
-        <p className="text-2xl md:text-4xl text-blue-700 mb-8">Learn, Know and Apply</p>
+        <p className="text-2xl md:text-4xl text-blue-700 mb-8"></p>
         <div className='justify-between content-center text-green-700 '>
           
         </div>
-      </div>
-      <Head>
-        <title>File Upload</title>
-      </Head>
-      <Image
-        src="/background.jpg"
-        alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
+      
+      
       
       <div className="absolute top-4 left-4">
       </div>
@@ -69,6 +60,7 @@ export default function Home() {
            </a>
          </div>
       </div>
+    </div>
     </div>
   );
 }

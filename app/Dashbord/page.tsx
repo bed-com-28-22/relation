@@ -40,7 +40,7 @@ export default function Dashbord() {
          </div>
          <div className="mt-4 text-center">
            <a href="/HOME" className="text-indigo-600 hover:underline flex items-center justify-center">
-             <span className="mr-2"></span> Back
+             <span className="mr-2"></span> <b>Back</b>
            </a>
          </div>
     </div>

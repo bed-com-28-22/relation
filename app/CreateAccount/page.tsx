@@ -1,6 +1,9 @@
 'use client'
 import { useState } from 'react';
-
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useRef } from 'react';
 const CreateAccountPage = () => {
   const [Firstname, setFirstname] = useState('');
   const [SurName, setSurName] = useState('');
@@ -11,8 +14,14 @@ const CreateAccountPage = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    
     e.preventDefault();
-    // Mock account creation function
+  
+     
+    <h1 className="text-4xl text-orange-500 md:text-6xl font-bold mb-4">
+          University of Malawi Online Lecturing
+        </h1>
+
     if (Firstname && EnterEmail && UserName && password && password === confirmPassword) {
       alert('Account Created Successfully!');
     } else if (password !== confirmPassword) {
@@ -24,8 +33,20 @@ const CreateAccountPage = () => {
 
   return (
     
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-       
+    
+    <div className="min-h-screen flex items-center relative h-screen w-screen justify-center bg-gray-100">
+       <Head>
+        <title>University of Malawi Online Lecturing</title>
+      </Head>
+      
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
+        <h1 className="text-4xl text-orange-500 md:text-6xl font-bold mb-4">
+          University of Malawi online lecturing
+        </h1>
+        <p className="text-2xl md:text-4xl text-blue-700 mb-8"></p>
+        <div className='justify-between content-center text-green-700 '>
+          
+        </div>
       <div className=" p-8 rounded shadow-md bg-blue-300 w-96">
       <div className="top-4 left-4"> <a href="/login" className="text-indigo-600 hover:underline flex items-center"> <span className="mr-2"><b>←</b></span> </a> </div> 
         <h2 className="text-2xl font-bold mb-6 text-center">Create Account</h2>
@@ -112,6 +133,7 @@ const CreateAccountPage = () => {
          </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };
