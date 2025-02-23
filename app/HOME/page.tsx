@@ -18,7 +18,7 @@ export default function Home() {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
         <h1 className="text-4xl text-orange-500 md:text-6xl font-bold mb-4">
-          University of Malawi online lecturing
+          University of Malawi Online Lecturing
         </h1>
         <p className="text-2xl md:text-4xl text-blue-700 mb-8">Learn, Know and Apply</p>
         <div className='justify-between content-center text-green-700 '>
